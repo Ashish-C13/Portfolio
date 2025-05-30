@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Quintessential&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+    .portfolio {
+        padding-top: 10px;
+    }
+.me {
+    padding: 10px;
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    transition: display .3s ease;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    color: rgb(211, 209, 250);
+    justify-content: space-between;
+    padding: 12px 10px 12px 60px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+li {
+    padding: 5px 13px;
+    font-size: 25px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.menu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        padding-left: 40px;
+    }
+
+    .portfolio {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+
+    li {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+        position: relative;
+    }
+
+    .me:hover li {
+        display: inline;
+        font-size: 20px;
+    }
+
+    .me:hover ul {
+        flex-direction: column;
+    }
+
+    .me:hover .menu {
+        display: none;
+    }
+}
+/* ---------------------------------------------- */
+.main {
+    background-color: rgb(128, 124, 248);
+    display: flex;
+    overflow-y: auto;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 18px;
+    font-family: "Noto Serif", serif;
+}
+
+.main-img {
+    width: 50%;
+    height: 50%;
+    scrollbar-width: none;
+    padding-top: 55px;
+    overflow-x: calc();
+}
+
+.m-img {
+    height: 590px;
+}
+
+.na {
+    color: white;
+    font-size: 45px;
+}
+
+.fd {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        font-size: 9px;
+        justify-content: center;
+        padding: 20% 0 0% 0;
+        text-align: center;
+    }
+
+    .na {
+        font-size: 18px;
+        display: inline;
+    }
+
+    .m-img {
+        height: 320px;
+    }
+
+    .main-img {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        overflow-y: auto;
+        justify-content: center;
+    }
+}
+/* -------------------------------------- */
+.about {
+    display: flex;
+    align-items: center;
+    background-color: rgba(121, 124, 168, 0.914);
+    overflow-y: auto;
+}
+.about-img {
+    width: 50%;
+    padding: 40px 10px 40px 0px;
+    overflow: visible;
+}
+
+.a-img {
+    height: 500px;
+}
+
+.about-name {
+    color: rgb(12, 12, 12);
+    width: 50%;
+    font-family: "Noto Serif", serif;
+}
+.about-me-name {
+    /* width: 170px; */
+    /* box-shadow: 0px 3px 0px white; */
+    /* bottom: 100px; */
+    color: white;
+} 
+.about-me{
+    padding-top: 10px;
+}
+.a{
+    font-size: 20px;
+    list-style: circle;
+    font-family: "Quintessential", serif;
+    font-weight: bold;
+}
+td{
+    /* font-size: 18px; */
+    padding: 5px 10px 5px 0px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
+    }
+    .a-img{
+        width: 340px;
+        height: 300px;
+    }
+
+    .about-name {
+        font-size: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    ul{
+        width: 100%;
+        text-align: center;
+    }
+    .about-me-name{
+        text-align: center;
+    }
+    table{
+        margin: 0px 30px 30px 30px;
+        text-align: center;
+        font-size: 17px;
+
+    }
+}
+.pro{
+    background-color: rgb(128, 124, 248);;
+}
+.all-projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 40px;
+}
+.projects{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.project-name{
+    text-align: center;
+    padding: 70px 0px 40px 0px;
+    /* border-bottom: 2px solid white; */
+}
