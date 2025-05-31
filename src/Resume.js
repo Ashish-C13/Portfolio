@@ -5,7 +5,7 @@ export default function Resumer() {
         <>
             <section id='Resume' className='resume'>
                 <div className='resume-name'>
-                    <h1>See my Resumea <span className='resume-link'><a href='#'>HEAR</a></span></h1>
+                    <h1>See my Resumea <span className='resume-link'><a href='https://drive.google.com/file/d/1sMQMMnG-H6AapZTVAvTnchwiKSgzSJxE/view?usp=drivesdk'>HEAR</a></span></h1>
                 </div>
                 <div className='resume-img'>
                     <img className='r-img' src={ResumeImg}></img>
